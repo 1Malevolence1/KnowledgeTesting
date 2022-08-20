@@ -2,20 +2,26 @@ class RandomRegenerationOfNumbers : RandomNumber {
 
 
     override fun randomNumber(min: Int, max: Int) {
-        val numberOne = (min..max).random()
-        val numberTwo = (min..max).random()
-        val answer = (numberOne * numberTwo).toString()
+        var count = 0
+        var countTru = 0
+        while (count < 5) {
+            val numberOne = (min..max).random()
+            val numberTwo = (min..max).random()
 
-        print("${numberOne} * ${numberTwo}  = ")
+            val answer = (numberOne * numberTwo).toString()
 
-        val answerUser = readLine()
+            print("${numberOne} * ${numberTwo}  = ")
 
-        if (answerUser == answer)
-            println("Верно")
-        else {
-            println("Не верно")
+            val answerUser = readLine()
+
+            if (answerUser == answer) {
+                countTru += 1
+            }
+            count += 1
+
+
+
         }
-
-
+        println("Вы решили правильно ${countTru} примера")
     }
 }
