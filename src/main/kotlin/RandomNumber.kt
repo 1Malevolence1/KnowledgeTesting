@@ -1,0 +1,7 @@
+interface RandomNumber{
+
+
+    fun randomNumber() {
+    }
+
+}
