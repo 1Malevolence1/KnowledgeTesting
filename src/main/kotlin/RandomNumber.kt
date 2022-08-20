@@ -1,7 +1,7 @@
 interface RandomNumber{
 
 
-    fun randomNumber() {
-    }
+    fun randomNumber()
+
 
 }
