@@ -1,8 +1,9 @@
+class RandomRegenerationOfNumbers : RandomNumber {
 
-class LevelOne: RandomNumber {
-    override fun randomNumber() {
-        val numberOne = (0..10).random()
-        val numberTwo = (0..10).random()
+
+    override fun randomNumber(min: Int, max: Int) {
+        val numberOne = (min..max).random()
+        val numberTwo = (min..max).random()
         val answer = (numberOne * numberTwo).toString()
 
         print("${numberOne} * ${numberTwo}  = ")
@@ -14,6 +15,7 @@ class LevelOne: RandomNumber {
         else {
             println("Не верно")
         }
+
 
     }
 }

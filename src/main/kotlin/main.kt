@@ -12,13 +12,13 @@ fun main(){
     when(answer){
 
         "1" -> {
-            val levelOne = LevelOne()
-            levelOne.randomNumber()
+            val levelOne = RandomRegenerationOfNumbers()
+            levelOne.randomNumber(1,10)
         }
 
         "2" -> {
-            val levelTwo = LevelTwo()
-            levelTwo.randomNumber()
+            val levelTwo = RandomRegenerationOfNumbers()
+            levelTwo.randomNumber(11,100)
         }
 
         else -> {
