@@ -21,6 +21,10 @@ fun main(){
             levelTwo.randomNumber()
         }
 
+        else -> {
+            println("Такого уровня нет. Выбириете те, что доступны")
+        }
+
 
     }
 }
