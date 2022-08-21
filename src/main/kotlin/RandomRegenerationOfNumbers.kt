@@ -1,9 +1,10 @@
-class RandomRegenerationOfNumbers : RandomNumber {
+class RandomRegenerationOfNumbers(var min : Int, var max : Int) : RandomNumber {
 
 
-    override fun randomNumber(min: Int, max: Int) {
+    override fun randomNumber() {
         var count = 0
         var countTru = 0
+
         while (count < 5) {
             val numberOne = (min..max).random()
             val numberTwo = (min..max).random()
@@ -19,9 +20,9 @@ class RandomRegenerationOfNumbers : RandomNumber {
             }
             count += 1
 
-
-
         }
         println("Вы решили правильно ${countTru} примера")
     }
+
+
 }
