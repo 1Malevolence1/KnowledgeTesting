@@ -1,28 +1,32 @@
-class RandomRegenerationOfNumbers(var min : Int, var max : Int) : RandomNumber {
+open class RandomRegenerationOfNumbers(protected val min: Int, protected val max: Int) : RandomNumber {
 
 
     override fun randomNumber() {
+
+
         var count = 0
         var countTru = 0
 
         while (count < 5) {
-            val numberOne = (min..max).random()
-            val numberTwo = (min..max).random()
+            val x1 = GeneratingRandomExample(1,10)
+                x1.randomNumber()
+            //val answer = (numberOne * numberTwo).toString()
 
-            val answer = (numberOne * numberTwo).toString()
-
-            print("${numberOne} * ${numberTwo}  = ")
 
             val answerUser = readLine()
 
-            if (answerUser == answer) {
+            //if (answerUser == answer) {
                 countTru += 1
+                count += 1
             }
-            count += 1
+
+
 
         }
-        println("Вы решили правильно ${countTru} примера")
+        //println("Вы решили правильно ${countTru} примера")
     }
 
+//}
 
-}
+
+//}
