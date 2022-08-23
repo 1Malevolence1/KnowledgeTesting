@@ -8,8 +8,8 @@ interface CountingMathTask {
 
   ) : CountingMathTask {
       override fun taskResult(): Int {
-          val numbers = text.split("*")
-          return 0
+          val numbers = text.replace(" ","").split("*")
+          return numbers[0].toInt() * numbers[1].toInt()
       }
   }
 }
