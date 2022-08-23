@@ -1,8 +1,6 @@
 
 
 interface CountingMathTask {
-
-
     fun taskResult(): Int
 
   class Base(
@@ -10,8 +8,8 @@ interface CountingMathTask {
 
   ) : CountingMathTask {
       override fun taskResult(): Int {
-          val numbers = text.split("*" )
+          val numbers = text.split("*")
+          return 0
       }
   }
-
 }
