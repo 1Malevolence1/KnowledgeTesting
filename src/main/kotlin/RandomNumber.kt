@@ -1,8 +1,0 @@
-interface RandomNumber{
-
-
-    fun randomNumber()
-
-
-
-}
